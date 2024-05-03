@@ -17,7 +17,7 @@ app.post("/speak", async (request: Request, response: Response) => {
     const { text } = request.body;
     const result = await gooeyAPI(text || 'Rien a dire');
     if (result.error) {
-        response.status(200).send(result);
+        response.status(500).send(result);
     }
     else {
         response.status(200).send(result);
