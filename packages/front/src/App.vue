@@ -1,18 +1,21 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import LeftView from './components/LeftView.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+        <img alt="Marmelab AI logo" class="logo" src="@/assets/marmelab-ai.png" width="125" height="125" />
+        <img alt="Francois logo" class="logo" src="@/assets/francois.png" width="125" height="125" />
+        <img alt="Marmelab logo" class="logo" src="@/assets/marmelab.png" width="125" height="125" />
+    </div>
+    <div class="wrapper">
+      <LeftView msg="Better than the original" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/speak">Make him speak</RouterLink>
       </nav>
     </div>
   </header>

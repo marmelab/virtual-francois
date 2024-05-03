@@ -6,11 +6,22 @@ help: ## Display available commands
 install: ## Install dependencies
 	npm install
 
-start: ## Start the application
+start-front: ## Start the application
 	cd ./packages/front/ && npm run dev
 
+start-back: ## Start the application
+	cd ./packages/back/ && npm start
+
 build: ## Build the application for production
+	cd ./packages/back/ && npm run build
 	cd ./packages/front/ && npm run build
+
+clean: ## Clean dependencies and builds
+	rm -rf ./packages/front/node_modules
+	rm -rf ./packages/back/node_modules
+	rm -rf ./packages/front/dist
+	rm -rf ./packages/back/dist
+	rm -rf package-lock.json
 
 lint: ## Lint the code
 	npm run format && npm run lint
