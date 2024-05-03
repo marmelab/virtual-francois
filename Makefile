@@ -7,13 +7,13 @@ install: ## Install dependencies
 	npm install
 
 start: ## Start the application
-	npm run dev
+	cd ./packages/front/ && npm run dev
 
 build: ## Build the application for production
-	npm run build
+	cd ./packages/front/ && npm run build
 
 lint: ## Lint the code
 	npm run format && npm run lint
 
 test: ## Run unit tests
-	npm run test:unit
+	cd ./packages/front/ && npm run test:unit
