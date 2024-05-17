@@ -9,7 +9,7 @@
             <li>He will say exactly whant you want (but no NSFW things sorry for you fantasms)</li>
             <li>He will never be busy</li>
             <li>He is quit younger than the original (a few months)</li>
-            <li>He will working 24h/24 - 7j/j (ok, maybe the real one too)</li>
+            <li>He will work 24h/24 - 7j/j (ok, maybe the real one too)</li>
         </ul>
         <button @click="$router.push('speak')">Try it now</button>
     </div>
