@@ -1,6 +1,6 @@
 # virtual-francois
 
-Replacde my boss by some virtual one, using IA
+Replace my boss by some virtual one, using IA
 
 ## Recommended IDE Setup
 
